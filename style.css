@@ -1,0 +1,29 @@
+/* Simple code that makes my life easier */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+/* Customizing the header */
+.header {
+        background-color: #101920; /* Set the background color for the entire header */
+}
+
+.navigation {
+        background-color: #101920; /* Set the background color for the navigation bar */
+        text-align: center;
+        font-family: Arial;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px; 
+        padding: 35px; /* Add padding to the navigation bar */
+        .active {
+                font-weight: bold;
+        }
+}
+.navigation a {
+        margin: 20px; /* Adjust the value to control the spacing between links */
+        text-decoration: none; /* Removes underlines from links */
+        color: white;
+}
