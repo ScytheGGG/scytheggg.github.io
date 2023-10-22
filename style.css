@@ -5,25 +5,76 @@
         box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the header */
-.header {
-        background-color: #101920; /* Set the background color for the entire header */
+.navigation {
+        background-color: #101920; /* Sets the background color to Charcoal */
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        letter-spacing: 3px; 
+        text-align: center;
+        padding: 35px; /* Adds padding to the navigation bar */
+        display: flex;
+        justify-content: space-between; /* Moves "KT" to the left corner and centers the topics */
+        align-items: center; /* Centers the content vertically */
 }
 
-.navigation {
-        background-color: #101920; /* Set the background color for the navigation bar */
-        text-align: center;
-        font-family: Arial;
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: 3px; 
-        padding: 35px; /* Add padding to the navigation bar */
+.nameHD {
+        font-size: 35px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: white;
+}
+
+.nameHD::after {
+        margin: 5px;
+        content: "/>";
+        color: #ffe715;
+        display: inline;
+}
+
+.navigation .active {
+        font-weight: bold;
+        color: white;
+}
+
+.navigation a {
+        text-decoration: none; /* Removes underlines from links */
+        margin: 0 20px; /* Controls the space between the Topics */
+        color: hsla(0, 0%, 100%, 0.75);
+}
+
+.navigation a::after {
+        margin: 5px;
+        content: "/>";
+        color: #ffe715;
+        display: inline;
         .active {
                 font-weight: bold;
         }
 }
-.navigation a {
-        margin: 20px; /* Adjust the value to control the spacing between links */
-        text-decoration: none; /* Removes underlines from links */
+
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
+/* Customizing the main page */
+.introduction {
+        background-color: #101920;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        padding-top: 180px;
+        padding-left: 200px;
+        text-align: left;
         color: white;
+        .hello {
+                padding-bottom: 35px;
+        }
+        .name {
+                animation: lr-content 360ms;
+                animation-delay: 1890ms;
+                animation-fill-mode: forwards;
+                opacity: 0;
+                color:#ffe715;
+        }
 }
