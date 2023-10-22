@@ -5,13 +5,11 @@
         box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the header */
 .navigation {
         background-color: #101920; /* Sets the background color to Charcoal */
-        font-family: 'Roboto', sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
         font-size: 18px;
         letter-spacing: 3px; 
         text-align: center;
@@ -23,7 +21,7 @@
 
 .nameHD {
         font-size: 35px;
-        font-family: 'Roboto', sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: bold;
         color: white;
 }
@@ -60,7 +58,7 @@
 /* Customizing the main page */
 .introduction { 
         background-color: #101920;
-        font-family: 'Roboto', sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
         font-size: 32px;
         font-weight: 700;
         padding-top: 180px;
