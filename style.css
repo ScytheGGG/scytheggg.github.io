@@ -40,7 +40,7 @@
 
 .navigation a {
         text-decoration: none; /* Removes underlines from links */
-        margin: 0 20px; /* Controls the space between the Topics */
+        margin: 0 10px; /* Controls the space between the Topics */
         color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -55,14 +55,16 @@
 }
 
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
-/* Customizing the main page */
+                     /* Customizing the main page */
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 .introduction { 
         background-color: #101920;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 32px;
         font-weight: 700;
         padding-top: 180px;
         padding-left: 200px;
+        padding-bottom: 145px;
         text-align: left;
         color: white;
         .hello {
@@ -76,3 +78,120 @@
                 color:#ffe715;
         }
 }
+
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
+/* Customizing the projects section */
+
+.projects {
+        background-color: #101920;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 200px;
+        padding-top: 75px;
+        padding-bottom: 145px;
+        color: white;
+        .projectHeader {
+                font-size: 35px;
+                padding-bottom: 25px;
+        }
+        .projectHeader::after {
+                margin-left: 12px;
+                content: "/>";
+                color: #ffe715;
+        }
+}
+
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
+/* Customizing the about section */
+.aboutBio {
+        position: relative;
+}
+
+.about {
+        background-color:#101920;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        padding-top: 35px;
+        padding-left: 200px;
+        padding-bottom: 145px;
+        text-align: left;
+        color: white;
+        .aboutHeader {
+                padding-bottom: 30px;
+                font-size: 35px;
+        }
+        .aboutHeader::after {
+                margin-left: 12px;
+                content: "/>";
+                color: #ffe715;
+        }
+
+        /* About me section text */
+        .aboutBioPrefix11 {
+                position: absolute;
+                color:#ffe815;
+                left: -60px;
+        }
+        .aboutBioText11 {
+                margin-bottom: 7px;
+        }
+        .aboutBioPrefix12 {
+                position: absolute;
+                color:#ffe815;
+                left: -60px;
+        }
+        .aboutBioText12 {
+                margin-bottom: 7px;
+        }
+        .aboutBioEmpty {
+                position: absolute;
+                color:#ffe815;
+                left: -60px;
+        }
+        .aboutBioEmptyT {
+                color:#10192011;
+                margin-bottom: 7px;
+        }
+        .aboutBioPrefix21 {
+                position: absolute;
+                color:#ffe815;
+                left: -60px;
+        }
+        .aboutBioText21 {
+                margin-bottom: 7px;
+        }
+        .aboutBioPrefix22 {
+                position: absolute;
+                color:#ffe815;
+                left: -60px;
+        }
+        .aboutBioText22 {
+                margin-bottom: 7px;
+        }
+}
+
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
+/* Customizing the contact section */
+
+.contact {
+        background-color: #101920;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 200px;
+        padding-top: 75px;
+        padding-bottom: 25px;
+        color: white;
+        .contactHeader {
+                font-size: 35px;
+                padding-bottom: 25px;
+        }
+        .contactHeader::after {
+                margin-left: 12px;
+                content: "/>";
+                color: #ffe715;
+        }
+        .emailHeader {
+                font-size: 30px;
+                padding-top: 34px;
+        }
+}
+
