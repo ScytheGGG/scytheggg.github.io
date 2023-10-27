@@ -8,9 +8,9 @@
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the header */
 .navigation {
-        background-color: #101920; /* Sets the background color to Charcoal */
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 18px;
+        background-color: #141414; /* Sets the background color to Charcoal */
+        font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
+        font-size: 25px;
         letter-spacing: 3px; 
         text-align: center;
         padding: 35px; /* Adds padding to the navigation bar */
@@ -58,17 +58,23 @@
                      /* Customizing the main page */
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 .introduction { 
-        background-color: #101920;
+        height: 100vh; /* Set the height to fill the entire viewport height */
+        background-image: url('mountains-bgp.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 50%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 32px;
-        font-weight: 700;
         padding-top: 180px;
-        padding-left: 200px;
-        padding-bottom: 145px;
+        padding-left: 350px;
+        padding-bottom: 270px;
         text-align: left;
         color: white;
         .hello {
-                padding-bottom: 35px;
+                padding-top: 450px;
+        }
+        .hello2 {
+                padding-top: 35px;
         }
         .name {
                 animation: lr-content 360ms;
@@ -83,9 +89,9 @@
 /* Customizing the projects section */
 
 .projects {
-        background-color: #101920;
+        background-color: #141414;
         font-family: Arial, Helvetica, sans-serif;
-        padding-left: 200px;
+        padding-left: 350px;
         padding-top: 75px;
         padding-bottom: 145px;
         color: white;
@@ -100,6 +106,53 @@
         }
 }
 
+.projects-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 350px;
+
+        .project-box {
+                width: 575px;
+                height: 500px;
+                position: relative;
+                overflow: hidden;
+        }
+         .project-box img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                flex: 1;
+        } 
+        .project-box:last-child {
+                margin-right: 0; /* Remove right margin for the last box */
+            }
+        .project-details {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s;
+        }   
+        .project-box:hover .project-details {
+                opacity: 1;
+        }
+}
+
+.project-button {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 30px;
+        font-family:'Roboto Condensed', 'Lato', Arial, sans-serif!important;
+}
+
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the about section */
 .aboutBio {
@@ -107,12 +160,12 @@
 }
 
 .about {
-        background-color:#101920;
+        background-color:#282828;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
         font-weight: 700;
         padding-top: 35px;
-        padding-left: 200px;
+        padding-left: 350px;
         padding-bottom: 145px;
         text-align: left;
         color: white;
@@ -127,45 +180,13 @@
         }
 
         /* About me section text */
-        .aboutBioPrefix11 {
-                position: absolute;
-                color:#ffe815;
-                left: -60px;
-        }
-        .aboutBioText11 {
-                margin-bottom: 7px;
-        }
-        .aboutBioPrefix12 {
-                position: absolute;
-                color:#ffe815;
-                left: -60px;
-        }
-        .aboutBioText12 {
-                margin-bottom: 7px;
-        }
         .aboutBioEmpty {
                 position: absolute;
                 color:#ffe815;
                 left: -60px;
         }
-        .aboutBioEmptyT {
-                color:#10192011;
-                margin-bottom: 7px;
-        }
-        .aboutBioPrefix21 {
-                position: absolute;
-                color:#ffe815;
-                left: -60px;
-        }
-        .aboutBioText21 {
-                margin-bottom: 7px;
-        }
-        .aboutBioPrefix22 {
-                position: absolute;
-                color:#ffe815;
-                left: -60px;
-        }
-        .aboutBioText22 {
+        .aboutBioT {
+                color: #282828;
                 margin-bottom: 7px;
         }
 }
@@ -174,9 +195,9 @@
 /* Customizing the contact section */
 
 .contact {
-        background-color: #101920;
+        background-color: #141414;
         font-family: Arial, Helvetica, sans-serif;
-        padding-left: 200px;
+        padding-left: 350px;
         padding-top: 75px;
         padding-bottom: 25px;
         color: white;
@@ -195,3 +216,15 @@
         }
 }
 
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - - -- - - - - - - */
+                     /* Customizing the transformation border */
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - -- - - - - - -- -  */
+.prout-border-top {
+        background: linear-gradient(to bottom, #141414, #1b1b1b, #242424, #252525);
+        height: 100px; /* Adjust the height as needed */
+}
+
+.prout-border-bottom {
+        background: linear-gradient(to top, #141414, #1b1b1b, #242424, #252525);
+        height: 100px; /* Adjust the height as needed */
+}
