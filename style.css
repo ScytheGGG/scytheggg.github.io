@@ -10,7 +10,7 @@
 .navigation {
         background-color: #141414; /* Sets the background color to Charcoal */
         font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
-        font-size: 25px;
+        font-size: 18px;
         letter-spacing: 3px; 
         text-align: center;
         padding: 35px; /* Adds padding to the navigation bar */
@@ -64,7 +64,7 @@
         background-repeat: no-repeat;
         background-position: 50%;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 32px;
+        font-size: 25px;
         padding-top: 180px;
         padding-left: 350px;
         padding-bottom: 270px;
@@ -82,6 +82,23 @@
                 animation-fill-mode: forwards;
                 opacity: 0;
                 color:#ffe715;
+        }
+}
+
+.timeline-top{
+        position:absolute;
+        top: 75%;
+        bottom: -94%;
+        left: 16.5%; /* Adjust the position as needed */
+        border-left: 4px solid #282828; /* Adjust line color and style as needed */
+        z-index: 999; /* Make sure the line is on top of other content */
+        .timelineStart {
+                width: 20px; /* Adjust the width of the dot */
+                height: 20px; /* Adjust the height of the dot */
+                background-color:#282828; /* Adjust dot color */
+                border-radius: 100%; /* Make the dot a circle */
+                margin-left: -13px; /* Adjust the horizontal position to align with the line */
+                margin-top: -10px;
         }
 }
 
@@ -112,8 +129,8 @@
         margin-right: 350px;
 
         .project-box {
-                width: 575px;
-                height: 500px;
+                width: 375px;
+                height: 300px;
                 position: relative;
                 overflow: hidden;
         }
@@ -149,8 +166,9 @@
 .project-button {
         margin-top: 50px;
         padding: 10px;
-        font-size: 30px;
+        font-size: 18px;
         font-family:'Roboto Condensed', 'Lato', Arial, sans-serif!important;
+        background-color: #141414;
 }
 
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
@@ -160,9 +178,9 @@
 }
 
 .about {
-        background-color:#282828;
+        background-color:#15222E;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 700;
         padding-top: 35px;
         padding-left: 350px;
@@ -178,18 +196,28 @@
                 content: "/>";
                 color: #ffe715;
         }
-
         /* About me section text */
         .aboutBioEmpty {
                 position: absolute;
                 color:#ffe815;
-                left: -60px;
+                left: -80px;
         }
         .aboutBioT {
-                color: #282828;
+                color: #15222E;
                 margin-bottom: 7px;
         }
 }
+
+.prout-border-top {
+        background: linear-gradient(to bottom, #141414,#121316, #13181C, #141F21, #15222E);
+        height: 100px; /* Adjust the height as needed */
+}
+
+.prout-border-bottom {
+        background: linear-gradient(to top, #141414,#121316, #13181C, #141F21, #15222E);
+        height: 100px; /* Adjust the height as needed */
+}
+
 
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the contact section */
@@ -202,7 +230,7 @@
         padding-bottom: 25px;
         color: white;
         .contactHeader {
-                font-size: 35px;
+                font-size: 18px;
                 padding-bottom: 25px;
         }
         .contactHeader::after {
@@ -211,20 +239,7 @@
                 color: #ffe715;
         }
         .emailHeader {
-                font-size: 30px;
+                font-size: 18px;
                 padding-top: 34px;
         }
-}
-
-/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - - -- - - - - - - */
-                     /* Customizing the transformation border */
-/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - -- - - - - - -- -  */
-.prout-border-top {
-        background: linear-gradient(to bottom, #141414, #1b1b1b, #242424, #252525);
-        height: 100px; /* Adjust the height as needed */
-}
-
-.prout-border-bottom {
-        background: linear-gradient(to top, #141414, #1b1b1b, #242424, #252525);
-        height: 100px; /* Adjust the height as needed */
 }
