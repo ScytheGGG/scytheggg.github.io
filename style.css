@@ -85,23 +85,6 @@
         }
 }
 
-.timeline-top{
-        position:absolute;
-        top: 75%;
-        bottom: -94%;
-        left: 16.5%; /* Adjust the position as needed */
-        border-left: 4px solid #282828; /* Adjust line color and style as needed */
-        z-index: 999; /* Make sure the line is on top of other content */
-        .timelineStart {
-                width: 20px; /* Adjust the width of the dot */
-                height: 20px; /* Adjust the height of the dot */
-                background-color:#282828; /* Adjust dot color */
-                border-radius: 100%; /* Make the dot a circle */
-                margin-left: -13px; /* Adjust the horizontal position to align with the line */
-                margin-top: -10px;
-        }
-}
-
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the projects section */
 
@@ -201,6 +184,7 @@
                 position: absolute;
                 color:#ffe815;
                 left: -80px;
+                margin-top: 2px;
         }
         .aboutBioT {
                 color: #15222E;
@@ -230,7 +214,7 @@
         padding-bottom: 25px;
         color: white;
         .contactHeader {
-                font-size: 18px;
+                font-size: 30px;
                 padding-bottom: 25px;
         }
         .contactHeader::after {
@@ -238,8 +222,16 @@
                 content: "/>";
                 color: #ffe715;
         }
-        .emailHeader {
-                font-size: 18px;
-                padding-top: 34px;
+        .contactBio {
+                font-size: 25px;
+        }
+        .form-group {
+                margin-top: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 25px;
         }
 }
+
+/* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
+/* Animation keyframes */

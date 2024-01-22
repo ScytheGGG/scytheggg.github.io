@@ -6,22 +6,22 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Used to define how a web page should be displayed on a mobile device. -->
                 <link rel="stylesheet" href="style.css"> <!-- Links the style.css to this project -->
+                <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+              />
         </head>
         <body>
                 <header>
                         <div class="navigation">
                                 <h3 class="nameHD">KT</h3>
                                 <nav>
-                                                <a class="active" href="index.html">Home</a>
-                                                <a href="projects.html">Projects</a>
-                                                <a href="">About</a>
-                                                <a href="contact.html">Contact</a>
+                                    <a class="active" href="index.html">Home</a>
+                                    <a href="projects.html">Projects</a>
+                                    <a href="contact.html">Contact</a>
                                 </nav>
                         </div>
                 </header>
-                <div class="timeline-top">
-                        <div class="timelineStart"></div>
-                </div>
                 <div class="introduction">
                         <h3 class="hello">Hello 👋</h3>
                         <h3 class="hello2">I'm <span style="color:#ffe715;">Karl</span>, <span style="font-style:italic;">a Software Developer student</span> hailing <br>from the tech-savvy landscapes of Finland. </h3>
@@ -108,12 +108,76 @@
                  <div class="prout-border-bottom"></div>
                 <!-- This will be the contact segment -->
                 <div class="contact">
-                        <h3 class="contactHeader">Let's talk</h3>
+                        <h3 class="contactHeader">Contact</h3>
                         <h3 class="contactBio">Now that you know more about me, feel free to <br>send me a message.</h3>
-                        <h3 class="emailHeader">Email</h3>
-                        <div>
-                        </div>
+                        <form id="contactForm" class="contactForm">
+                                <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" name="name" required>
+                                        <small class="error" id="nameError"></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required>
+                                        <small class="error" id="emailError"></small>
+                                    </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject:</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                    <small class="error" id="subjectError"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                    <small class="error" id="messageError"></small>
+                                </div>
+                                <button type="submit" onclick="validateForm()">Send</button>
+                            </form>
                 </div>
+                <script>
+                        function sendToDiscord(data) {
+                            const webhookURL = "https://discord.com/api/webhooks/1171891427274395798/IfLFqQwb9FPv75HVTQevesTSzkOj5ik5FxUBh1ZTeveZEP8jtqbaaNl6xqMwO6WWw8S7"; 
+                    
+                            fetch(webhookURL, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({
+                                    content: `You have a new message from: \nName: ${data.name} \nEmail:${data.email}:\nSubject: ${data.subject}\nMessage: ${data.message}`,
+                                }),
+                            })
+                            .then(response => {
+                                if (response.ok) {
+                                    alert('Message sent!');
+                                    location.reload(); // Refresh the page after successful submission
+                                } else {
+                                    alert('Failed to send message');
+                                }
+                            })
+                            .catch(error => {
+                                alert('An error occurred while sending the message');
+                                console.error('Error:', error);
+                            });
+                        }
+                    
+                        function validateForm() {
+                            event.preventDefault();
+                    
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const subject = document.getElementById('subject').value;
+                            const message = document.getElementById('message').value;
+                    
+                            if (name && email && subject && message) {
+                                const formData = { name, email, subject, message };
+                                sendToDiscord(formData);
+                            } else {
+                                alert('Please fill in all fields');
+                            }
+                        }
+                    </script>
+                    <!-- timeline segment again -->
                 <div class="timeline-bottom">
                         <div class="timelineEnd"></div>
                 </div>
