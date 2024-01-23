@@ -5,6 +5,22 @@
         box-sizing: border-box;
 }
 
+html {
+        scroll-behavior: smooth;
+}
+
+.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Adjust the z-index value as needed */
+}
+      
+
+.sticky + .content {
+        padding-top: 60px;
+}
+
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the header */
 .navigation {
@@ -49,9 +65,10 @@
         content: "/>";
         color: #ffe715;
         display: inline;
-        .active {
-                font-weight: bold;
-        }
+}
+
+.active {
+        font-weight: bold;
 }
 
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */

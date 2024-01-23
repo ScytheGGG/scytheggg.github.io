@@ -13,16 +13,18 @@
         </head>
         <body>
                 <header>
-                        <div class="navigation">
+                        <div id="navigation" class="navigation">
                                 <h3 class="nameHD">KT</h3>
                                 <nav>
-                                    <a class="active" href="index.html">Home</a>
-                                    <a href="projects.html">Projects</a>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="#home">Home</a>
+                                    <a href="#projects">Projects</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
                                 </nav>
+                                <script src="navbar.js"></script>                                
                         </div>
                 </header>
-                <div class="introduction">
+                <div id="home" class="introduction">
                         <h3 class="hello">Hello 👋</h3>
                         <h3 class="hello2">I'm <span style="color:#ffe715;">Karl</span>, <span style="font-style:italic;">a Software Developer student</span> hailing <br>from the tech-savvy landscapes of Finland. </h3>
 
@@ -62,7 +64,7 @@
                 <div class="prout-border-top"></div>
                 <!-- This will be the about me segment -->  
                 <div>
-                        <div class="about">
+                        <div id="about" class="about">
                                 <h3 class="aboutHeader">About.js</h3>
                                 <div class="aboutBio">
                                         <h3 class="aboutBioEmpty">01</h3>
@@ -107,7 +109,7 @@
                 <!-- transformation border to the other color -->
                  <div class="prout-border-bottom"></div>
                 <!-- This will be the contact segment -->
-                <div class="contact">
+                <div id="contact" class="contact">
                         <h3 class="contactHeader">Contact</h3>
                         <h3 class="contactBio">Now that you know more about me, feel free to <br>send me a message.</h3>
                         <form id="contactForm" class="contactForm">
@@ -177,9 +179,5 @@
                             }
                         }
                     </script>
-                    <!-- timeline segment again -->
-                <div class="timeline-bottom">
-                        <div class="timelineEnd"></div>
-                </div>
         </body>
 </html>
