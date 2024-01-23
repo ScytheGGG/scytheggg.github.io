@@ -1,20 +1,20 @@
 window.onscroll = function() {
         myFunction();
         updateActiveLink();
-    };
+};
     
-    var navbar = document.getElementById("navigation");
-    var sticky = navbar.offsetTop;
+var navbar = document.getElementById("navigation");
+var sticky = navbar.offsetTop;
     
-    function myFunction() {
+function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky");
         } else {
             navbar.classList.remove("sticky");
         }
-    }
+}
     
-    function updateActiveLink() {
+function updateActiveLink() {
         var currentPosition = window.pageYOffset;
         var projectsSection = document.getElementById("projects").offsetTop;
         var aboutSection = document.getElementById("about").offsetTop;
@@ -36,15 +36,15 @@ window.onscroll = function() {
             setActiveLink(aboutLink);
             removeActiveLink([homeLink, projectsLink, contactLink]);
         }
-    }
+}
     
-    function setActiveLink(link) {
+function setActiveLink(link) {
         link.classList.add("active");
-    }
+}
     
-    function removeActiveLink(links) {
+function removeActiveLink(links) {
         links.forEach(function(link) {
             link.classList.remove("active");
         });
-    }
+}
     
