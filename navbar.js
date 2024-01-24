@@ -18,6 +18,12 @@ function updateActiveLink() {
         var currentPosition = window.pageYOffset;
         var projectsSection = document.getElementById("projects").offsetTop;
         var aboutSection = document.getElementById("about").offsetTop;
+        var contactSection = document.getElementById("contact").offsetTop;
+
+        console.log("currentPosition:", currentPosition);
+        console.log("projectsSection:", projectsSection);
+        console.log("aboutSection:", aboutSection);
+        console.log("contactSection:", contactSection);    
     
         var homeLink = document.querySelector("nav a[href='#home']");
         var projectsLink = document.querySelector("nav a[href='#projects']");
@@ -32,10 +38,13 @@ function updateActiveLink() {
         } else if (currentPosition >= projectsSection - offset && currentPosition < aboutSection - offset) {
             setActiveLink(projectsLink);
             removeActiveLink([homeLink, aboutLink, contactLink]);
-        } else if (currentPosition >= aboutSection - offset) {
+        } else if (currentPosition >= aboutSection - offset && currentPosition < contactSection - offset) {
             setActiveLink(aboutLink);
             removeActiveLink([homeLink, projectsLink, contactLink]);
-        }
+        } else if (currentPosition >= contactSection - offset) {
+            setActiveLink(contactLink);
+            removeActiveLink([homeLink, projectsLink, aboutLink]);
+        } 
 }
     
 function setActiveLink(link) {
@@ -46,5 +55,4 @@ function removeActiveLink(links) {
         links.forEach(function(link) {
             link.classList.remove("active");
         });
-}
-    
+}   
