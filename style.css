@@ -15,16 +15,28 @@ html {
         width: 100%;
         z-index: 1000; /* Adjust the z-index value as needed */
 }
-      
 
 .sticky + .content {
         padding-top: 60px;
 }
 
+:root {
+        --yellow: #ffe715;
+        --gray: #141414;
+        --lightgray: #abb29e;
+        --blue: #15222E;
+        --babyblue: #56b6c2;
+        --lightblue: #169fff;
+        --pink: #a478dd;
+        --beige: #e5c062;
+        --red: #e05345;
+        --green: #98a446;
+}
+
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the header */
 .navigation {
-        background-color: #141414; /* Sets the background color to Charcoal */
+        background-color: var(--gray); /* Sets the background color to Charcoal */
         font-family:  'Roboto Condensed', 'Lato', Arial, sans-serif!important;
         font-size: 18px;
         letter-spacing: 3px; 
@@ -45,7 +57,7 @@ html {
 .nameHD::after {
         margin: 5px;
         content: "/>";
-        color: #ffe715;
+        color: var(--yellow);
         display: inline;
 }
 
@@ -63,7 +75,7 @@ html {
 .navigation a::after {
         margin: 5px;
         content: "/>";
-        color: #ffe715;
+        color: var(--yellow);
         display: inline;
 }
 
@@ -93,20 +105,13 @@ html {
         .hello2 {
                 padding-top: 35px;
         }
-        .name {
-                animation: lr-content 360ms;
-                animation-delay: 1890ms;
-                animation-fill-mode: forwards;
-                opacity: 0;
-                color:#ffe715;
-        }
 }
 
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the projects section */
 
 .projects {
-        background-color: #141414;
+        background-color: var(--gray);
         font-family: Arial, Helvetica, sans-serif;
         padding-left: 350px;
         padding-top: 75px;
@@ -119,7 +124,7 @@ html {
         .projectHeader::after {
                 margin-left: 12px;
                 content: "/>";
-                color: #ffe715;
+                color: var(--yellow);
         }
 }
 
@@ -168,7 +173,7 @@ html {
         padding: 10px;
         font-size: 18px;
         font-family:'Roboto Condensed', 'Lato', Arial, sans-serif!important;
-        background-color: #141414;
+        background-color: var(--gray);
 }
 
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
@@ -178,7 +183,7 @@ html {
 }
 
 .about {
-        background-color:#15222E;
+        background-color:var(--blue);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
         font-weight: 700;
@@ -210,12 +215,12 @@ html {
 }
 
 .prout-border-top {
-        background: linear-gradient(to bottom, #141414,#121316, #13181C, #141F21, #15222E);
+        background: linear-gradient(to bottom, var(--gray),#121316, #13181C, #141F21, var(--blue));
         height: 100px; /* Adjust the height as needed */
 }
 
 .prout-border-bottom {
-        background: linear-gradient(to top, #141414,#121316, #13181C, #141F21, #15222E);
+        background: linear-gradient(to top, var(--gray),#121316, #13181C, #141F21, var(--blue));
         height: 100px; /* Adjust the height as needed */
 }
 
@@ -224,7 +229,7 @@ html {
 /* Customizing the contact section */
 
 .contact {
-        background-color: #141414;
+        background-color: var(--gray);
         font-family: Arial, Helvetica, sans-serif;
         padding-left: 350px;
         padding-top: 75px;
@@ -238,7 +243,7 @@ html {
         .contactHeader::after {
                 margin-left: 12px;
                 content: "/>";
-                color: #ffe715;
+                color: var(--yellow);
         }
         .contactBio {
                 font-size: 25px;
