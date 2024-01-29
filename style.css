@@ -114,7 +114,7 @@ html {
         font-family: Arial, Helvetica, sans-serif;
         padding-left: 350px;
         padding-top: 200px;
-        padding-bottom: 145px;
+        padding-bottom: 245px;
         color: white;
         .projectHeader {
                 font-size: 35px;
@@ -188,7 +188,7 @@ html {
         font-weight: 700;
         padding-top: 145px;
         padding-left: 350px;
-        padding-bottom: 45px;
+        padding-bottom: 145px;
         text-align: left;
         color: white;
         .aboutHeader {
