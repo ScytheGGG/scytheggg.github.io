@@ -303,6 +303,13 @@ html {
     height: 80px;
 }
 
+.contact .linkedin-logo {
+        padding-top: 20px;
+        margin-left: 30px;
+        width: 60px;
+        height: 80px;
+}
+
 .contact .discord-name {
         display: block;
         margin-top: 5px; 
