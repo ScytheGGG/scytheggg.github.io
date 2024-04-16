@@ -318,15 +318,18 @@ html {
     
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 /* Customizing the content page */
+.pr-body {
+        background-color: var(--gray);
+}
+
 .pr-div {
         height: 100vh;
-        background-image: url('mountains-bgp.png');
+        background-image: url(mountains-bgp.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: 50%;
         padding-top: 150px;
         padding-left: 350px;
-        background-color: var(--gray);
 }
     
 .pr-container {
@@ -353,8 +356,8 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%; /* Ensure the background color covers the entire .pr-box */
-        height: 100%; /* Ensure the background color covers the entire .pr-box */
+        width: 100%;
+        height: 100%;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
         display: flex;
@@ -364,7 +367,9 @@ html {
         opacity: 0;
         transition: opacity 0.3s;
         font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden; /* Add this line to hide overflowing content */
 }
+
     
 .pr-box:hover .pr-details {
         opacity: 1;
