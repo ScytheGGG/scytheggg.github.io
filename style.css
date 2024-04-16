@@ -95,7 +95,7 @@ html {
 /* - - - - - - - - - - -- - - - - - -- - - - - - - - - -- -  - - - - - */
 .introduction { 
         height: 100vh; /* Set the height to fill the entire viewport height */
-        background-image: url('mountains-bgp.png');
+        background-image: url('photos/mountains-bgp.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: 50%;
@@ -335,7 +335,7 @@ html {
 
 .pr-div {
         height: 100vh;
-        background-image: url(mountains-bgp.png);
+        background-image: url(photos/mountains-bgp.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: 50%;
