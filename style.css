@@ -9,6 +9,13 @@ html {
         scroll-behavior: smooth;
 }
 
+.main-body {
+        -webkit-user-select: none; /* Disable selection for Chrome, Safari, and Opera */
+        -moz-user-select: none; /* Disable selection for Firefox */
+        -ms-user-select: none; /* Disable selection for Internet Explorer/Edge */
+        user-select: none; /* Disable selection for all other browsers */
+}
+
 .sticky {
         position: fixed;
         top: 0;
@@ -320,6 +327,10 @@ html {
 /* Customizing the content page */
 .pr-body {
         background-color: var(--gray);
+        -webkit-user-select: none; /* Disable selection for Chrome, Safari, and Opera */
+        -moz-user-select: none; /* Disable selection for Firefox */
+        -ms-user-select: none; /* Disable selection for Internet Explorer/Edge */
+        user-select: none; /* Disable selection for all other browsers */
 }
 
 .pr-div {
@@ -378,6 +389,7 @@ html {
 
 .project-button {
         margin-top: 50px;
+        margin-bottom: 25px;
         padding: 10px;
         font-size: 18px;
         font-family:'Roboto Condensed', 'Lato', Arial, sans-serif!important;
